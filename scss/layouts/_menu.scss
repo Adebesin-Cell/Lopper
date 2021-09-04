@@ -1,0 +1,9 @@
+.menu {
+  align-self: center;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

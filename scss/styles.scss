@@ -1,0 +1,22 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+
+@import "./base/base";
+
+@import "./components/buttons";
+@import "./components/form";
+@import "./components/slider";
+
+@import "./layouts/footer";
+@import "./layouts/grid";
+@import "./layouts/header";
+@import "./layouts/menu";
+@import "./layouts/newsletter";
+@import "./layouts/testimonial";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/gallery";
+@import "./pages/home";
+@import "./pages/team";
+@import "./pages/services";

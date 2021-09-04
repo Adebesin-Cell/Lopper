@@ -1,0 +1,102 @@
+.slider {
+  display: grid;
+  flex: 0 0 100%;
+  grid-template-columns: 1fr 265px 1fr;
+  animation: fade 1.5s ease-in-out;
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &-box {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: -1;
+    }
+  }
+
+  &__caption {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    padding-left: var(--span-m);
+  }
+
+  &__text {
+    transform: rotate(90deg);
+    font-family: var(--family);
+    font-size: calc(var(--size-s) - 1px);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-align: left;
+    color: var(--secondary-text);
+  }
+
+  &__controls {
+    grid-row-start: 5;
+    grid-row-end: -1;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    background: var(--background);
+    padding-top: var(--span-l);
+    padding-right: var(--span-m);
+    padding-left: var(--span-m);
+    padding-bottom: var(--span-2xl);
+    display: flex;
+    margin-left: -3px;
+  }
+
+  &__counter {
+    margin-right: var(--span-m);
+    font-family: var(--family);
+    font-size: calc(var(--size-s) - 1px);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  &__functions {
+    display: flex;
+  }
+
+  &__btn {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+
+    &:first-child {
+      margin-right: var(--span-s);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transition: 300ms;
+      background: transparent;
+    }
+
+    &:hover::after {
+      transform: scale(2);
+      background: #807676;
+      opacity: 0.3;
+    }
+  }
+}
