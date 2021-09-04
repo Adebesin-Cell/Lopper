@@ -19,32 +19,32 @@
                             </span>
                         </h1>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="Home">
+                            <a href="index.php" class="footer__link" name="Home">
                                 Home
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="About">
+                            <a href="about.php" class="footer__link" name="About">
                                 About
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="Servces">
-                                Servces
+                            <a href="services.php" class="footer__link" name="Servces">
+                                Services
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="News">
-                                News
+                            <a href="team.php" class="footer__link" name="Team">
+                                Team
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="Gallery">
+                            <a href="gallery.php" class="footer__link" name="Gallery">
                                 Gallery
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link" name="Contact">
+                            <a href="contact.php" class="footer__link" name="Contact">
                                 Contact
                             </a>
                         </li>

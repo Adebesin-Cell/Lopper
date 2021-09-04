@@ -1,0 +1,42 @@
+.section-team-intro {
+  background: var(--white);
+  color: var(--header);
+}
+
+.team-intro {
+  background: url(../assets/images/team-intro-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: calc(2 * var(--span-2xl) - var(--span-xs));
+  }
+
+  &__header {
+    font-family: var(--family);
+    font-size: calc(var(--size-2xl) + 6px);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--pink);
+  }
+
+  &__paragraph {
+    font-family: var(--family);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+}
