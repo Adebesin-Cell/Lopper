@@ -240,6 +240,33 @@ body {
   border-radius: 50%;
 }
 
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  transition: 500ms ease-out;
+}
+
+.preloader.hidden {
+  top: -100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader__loader {
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  background: var(--overlay);
+  transition: 300ms;
+}
+
 .slider {
   display: grid;
   flex: 0 0 100%;
@@ -687,7 +714,7 @@ body {
   background: var(--overlay);
   clip-path: circle(100px at 90% -20%);
   pointer-events: none;
-  transition: 1s;
+  transition: 1s cubic-bezier(0.17, 0.67, 1, -0.78);
 }
 
 .menu__container.active {

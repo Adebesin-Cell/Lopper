@@ -157,6 +157,7 @@
             </div>
         </div>
     </footer>
+    <script src="Js/preloader.js"></script>
     <script src="Js/App.js"></script>
 </body>
 </html>
