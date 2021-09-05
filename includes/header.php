@@ -8,5 +8,9 @@
     <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
+<body class="no-scroll">
+    <div class="menu__container">
+        <div class="menu__content">
+            &nbsp;
+        </div>
+    </div>

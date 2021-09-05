@@ -1,6 +1,14 @@
+//scroll elements selection
 const btnScroll = document.querySelector(".scroll__btn");
 const section = document.querySelector("#section-intro");
+//sclider elements selection
+const sliders = document.querySelectorAll(".slider");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const counterEl = document.querySelector(".slider__current");
+const totalSlidesEl = document.querySelector(".slider__total");
 
+//btn scroll functionality
 btnScroll.addEventListener("click", function (e) {
   e.preventDefault();
   const s1coords = section.getBoundingClientRect();
@@ -12,12 +20,7 @@ btnScroll.addEventListener("click", function (e) {
   });
 });
 
-const sliders = document.querySelectorAll(".slider");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const counterEl = document.querySelector(".slider__current");
-const totalSlidesEl = document.querySelector(".slider__total");
-
+//Slider functionality
 let currentSlide = 0;
 const totalSlides = sliders.length;
 counterEl.textContent = `${currentSlide + 1}`;
