@@ -63,7 +63,7 @@
                 <p class="our-intro__paragraph">
                     By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
                 </p>
-                <a href="#" class="btn btn--pink">
+                <a href="services.php" class="btn btn--pink">
                     Learn more
                 </a>
             </div>  
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 <div class="services__btn">
-                    <a href="#" class="btn btn--pink">
+                    <a href="services.php" class="btn btn--pink">
                         Learn more
                     </a>
                 </div>

@@ -50,6 +50,9 @@
     padding-bottom: var(--span-2xl);
     display: flex;
     margin-left: -3px;
+    @media only screen and (max-width: 1320px) {
+      grid-column-start: 3;
+    }
   }
 
   &__counter {

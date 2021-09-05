@@ -60,10 +60,15 @@
     padding-right: calc(var(--span-m) + 5px);
     @media only screen and (min-width: 1800px) {
       padding-left: 15%;
+      max-width: 1050px;
     }
 
     @media only screen and (max-width: 1799px) {
       padding-left: 10%;
+    }
+
+    @media only screen and (max-width: 1320px) {
+      max-width: 750px;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -134,6 +139,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 130px;
+  @media only screen and (min-width: 1800px) {
+    grid-gap: 45px;
+  }
+
+  @media only screen and (max-width: 1140px) {
+    grid-gap: 50px;
+  }
 
   &__text {
     padding-top: var(--span-2xl);
@@ -174,6 +186,9 @@
     text-align: left;
     color: var(--header);
     max-width: 460px;
+    @media only screen and (min-width: 1800px) {
+      max-width: 600px;
+    }
   }
 
   &__paragraph {
@@ -187,6 +202,9 @@
     text-align: left;
     color: var(--paragraph);
     max-width: 460px;
+    @media only screen and (min-width: 1800px) {
+      max-width: 600px;
+    }
   }
 
   &__image {
@@ -221,6 +239,9 @@
     z-index: 3;
     position: relative;
     text-align: center;
+    @media only screen and (max-width: 1320px) {
+      grid-row-end: 5;
+    }
 
     &--faked {
       grid-column-start: 2;
@@ -234,21 +255,20 @@
 }
 
 .qoute {
-  font-family: Noticia Text;
-  font-size: 96px;
+  font-family: var(--family-2);
+  font-size: calc(2 * var(--size-2xl));
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--weight-xlg);
   line-height: 150px;
   letter-spacing: 0em;
   color: var(--light-grey);
   display: inline-block;
 
   &__text {
-    //styleName: Quote/Small;
-    font-family: Noticia Text;
-    font-size: 23px;
+    font-family: var(--family-2);
+    font-size: calc(var(--size-l) - 1px);
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--weight-sm);
     line-height: 40px;
     letter-spacing: 0em;
     color: var(--white);
@@ -261,8 +281,36 @@
 
 .features {
   display: grid;
-  grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
   grid-template-rows: repeat(5, 200px);
+  grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
+
+  @media only screen and (min-width: 1960px) {
+    grid-template-columns: 1fr 5px 200px repeat(2, 175px) 50px 200px;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    grid-template-columns: 1fr 240px 200px 225px 175px 30px 200px;
+  }
+
+  @media only screen and (max-width: 1799px) {
+    grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    grid-template-columns: 1fr 100px repeat(2, 175px) 200px;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    grid-template-columns: 1fr 20px repeat(2, 175px) 200px;
+  }
+
+  @media only screen and (max-width: 1320px) {
+    grid-template-columns: 1fr 175px 135px 200px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 175px 135px 200px;
+  }
 
   &__text {
     padding-top: calc(2 * var(--span-2xl));
@@ -280,8 +328,13 @@
       padding-left: 12.5%;
     }
 
+    @media only screen and (max-width: 1320px) {
+      grid-column-end: 3;
+    }
+
     @media only screen and (max-width: 1200px) {
       padding-left: 7.5%;
+      grid-column-end: 3;
     }
   }
 
@@ -318,6 +371,9 @@
     text-align: left;
     color: var(--white);
     max-width: 460px;
+    @media only screen and (min-width: 1800px) {
+      max-width: 600px;
+    }
   }
 
   &__paragraph {
@@ -331,6 +387,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (min-width: 1800px) {
+      max-width: 600px;
+    }
 
     span {
       display: block;

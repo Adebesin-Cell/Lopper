@@ -296,6 +296,12 @@ body {
   margin-left: -3px;
 }
 
+@media only screen and (max-width: 1320px) {
+  .slider__controls {
+    grid-column-start: 3;
+  }
+}
+
 .slider__counter {
   margin-right: var(--span-m);
   font-family: var(--family);
@@ -906,12 +912,19 @@ body {
 @media only screen and (min-width: 1800px) {
   .intro__view {
     padding-left: 15%;
+    max-width: 1050px;
   }
 }
 
 @media only screen and (max-width: 1799px) {
   .intro__view {
     padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .intro__view {
+    max-width: 750px;
   }
 }
 
@@ -991,6 +1004,18 @@ body {
   grid-gap: 130px;
 }
 
+@media only screen and (min-width: 1800px) {
+  .our-intro {
+    grid-gap: 45px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .our-intro {
+    grid-gap: 50px;
+  }
+}
+
 .our-intro__text {
   padding-top: var(--span-2xl);
   padding-bottom: var(--span-2xl);
@@ -1032,6 +1057,12 @@ body {
   max-width: 460px;
 }
 
+@media only screen and (min-width: 1800px) {
+  .our-intro__sub-header {
+    max-width: 600px;
+  }
+}
+
 .our-intro__paragraph {
   padding-top: var(--span-l);
   font-family: var(--family);
@@ -1043,6 +1074,12 @@ body {
   text-align: left;
   color: var(--paragraph);
   max-width: 460px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .our-intro__paragraph {
+    max-width: 600px;
+  }
 }
 
 .our-intro__image {
@@ -1079,6 +1116,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 1320px) {
+  .our-intro__overlay {
+    grid-row-end: 5;
+  }
+}
+
 .our-intro__overlay--faked {
   grid-column-start: 2;
   grid-row-start: 1;
@@ -1089,10 +1132,10 @@ body {
 }
 
 .qoute {
-  font-family: Noticia Text;
-  font-size: 96px;
+  font-family: var(--family-2);
+  font-size: calc(2 * var(--size-2xl));
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--weight-xlg);
   line-height: 150px;
   letter-spacing: 0em;
   color: var(--light-grey);
@@ -1100,10 +1143,10 @@ body {
 }
 
 .qoute__text {
-  font-family: Noticia Text;
-  font-size: 23px;
+  font-family: var(--family-2);
+  font-size: calc(var(--size-l) - 1px);
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--weight-sm);
   line-height: 40px;
   letter-spacing: 0em;
   color: var(--white);
@@ -1115,8 +1158,50 @@ body {
 
 .features {
   display: grid;
-  grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
   grid-template-rows: repeat(5, 200px);
+  grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
+}
+
+@media only screen and (min-width: 1960px) {
+  .features {
+    grid-template-columns: 1fr 5px 200px repeat(2, 175px) 50px 200px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .features {
+    grid-template-columns: 1fr 240px 200px 225px 175px 30px 200px;
+  }
+}
+
+@media only screen and (max-width: 1799px) {
+  .features {
+    grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .features {
+    grid-template-columns: 1fr 100px repeat(2, 175px) 200px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .features {
+    grid-template-columns: 1fr 20px repeat(2, 175px) 200px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .features {
+    grid-template-columns: 1fr 175px 135px 200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .features {
+    grid-template-columns: 1fr 175px 135px 200px;
+  }
 }
 
 .features__text {
@@ -1141,9 +1226,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 1320px) {
+  .features__text {
+    grid-column-end: 3;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .features__text {
     padding-left: 7.5%;
+    grid-column-end: 3;
   }
 }
 
@@ -1182,6 +1274,12 @@ body {
   max-width: 460px;
 }
 
+@media only screen and (min-width: 1800px) {
+  .features__sub-header {
+    max-width: 600px;
+  }
+}
+
 .features__paragraph {
   margin-top: calc(var(--span-2xl) + var(--span-xs));
   max-width: 460px;
@@ -1193,6 +1291,12 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--white);
+}
+
+@media only screen and (min-width: 1800px) {
+  .features__paragraph {
+    max-width: 600px;
+  }
 }
 
 .features__paragraph span {
