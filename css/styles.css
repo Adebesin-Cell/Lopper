@@ -257,11 +257,27 @@ body {
   visibility: hidden;
 }
 
+.preloader__icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader__icon svg {
+  width: 500px;
+  height: 300px;
+}
+
+.preloader__icon svg path {
+  fill: var(--overlay);
+}
+
 .preloader__loader {
   position: absolute;
   bottom: 0;
   height: 10px;
-  width: 100%;
+  width: 0%;
   left: 0;
   background: var(--overlay);
   transition: 300ms;

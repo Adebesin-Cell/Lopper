@@ -14,11 +14,26 @@
     visibility: hidden;
   }
 
+  &__icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 500px;
+      height: 300px;
+
+      path {
+        fill: var(--overlay);
+      }
+    }
+  }
+
   &__loader {
     position: absolute;
     bottom: 0;
     height: 10px;
-    width: 100%;
+    width: 0%;
     left: 0;
     background: var(--overlay);
     transition: 300ms;
