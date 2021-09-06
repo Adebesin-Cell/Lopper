@@ -1,5 +1,5 @@
 .section-home-intro {
-  background: url(../assets/images/background.png);
+  background: var(--overlay) url(../assets/images/background.png);
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -112,7 +112,6 @@
     }
 
     &:hover:after {
-      //#c801f0
       background: var(--pink);
       transform: scale(2);
       opacity: 0.5;
@@ -154,7 +153,7 @@
 
   &__header {
     font-family: var(--family);
-    font-size: calc(var(--size-s) - 1);
+    font-size: calc(var(--size-s) - 1px);
     font-style: normal;
     font-weight: var(--weight-xxlg);
     line-height: 26px;
@@ -213,6 +212,7 @@
     z-index: 2;
     position: relative;
     height: 100%;
+    object-fit: cover;
 
     &-box {
       display: grid;
@@ -304,8 +304,12 @@
     grid-template-columns: 1fr 20px repeat(2, 175px) 200px;
   }
 
+  @media only screen and (max-width: 1330px) {
+    grid-template-columns: 1fr 185px 135px 200px;
+  }
+
   @media only screen and (max-width: 1320px) {
-    grid-template-columns: 1fr 175px 135px 200px;
+    grid-template-columns: 1fr 175px 155px 200px;
   }
 
   @media only screen and (max-width: 1200px) {

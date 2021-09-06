@@ -1,3 +1,9 @@
 .h-100 {
   height: 100%;
 }
+
+.u-logo-fill {
+  .header__logo-box {
+    color: var(--overlay);
+  }
+}

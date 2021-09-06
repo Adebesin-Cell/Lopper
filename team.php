@@ -3,7 +3,7 @@
 ?>
     <section class="section-team-intro">
         <header class="header">
-            <div class="container">
+            <div class="container u-logo-fill">
                 <?php 
                     (include "includes/navigation.php")
                 ?>

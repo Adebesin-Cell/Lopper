@@ -18,7 +18,7 @@
     -webkit-clip-path: circle(100px at 90% -20%);
     clip-path: circle(100px at 90% -20%);
     pointer-events: none;
-    transition: 1s cubic-bezier(0.17, 0.67, 1, -0.78);
+    transition: 1s ease-out;
 
     &.active {
       -webkit-clip-path: circle(5000px at 90% -20%);
