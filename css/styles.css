@@ -274,6 +274,12 @@ body {
   height: 300px;
 }
 
+@media only screen and (max-width: 768px) {
+  .preloader__icon svg {
+    width: 200px;
+  }
+}
+
 .preloader__icon svg path {
   fill: var(--overlay);
 }
@@ -515,6 +521,12 @@ body {
   .footer__contact {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__socials {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1148,6 +1160,7 @@ body {
 @media only screen and (max-width: 1200px) {
   .clients__logos {
     padding-right: 10%;
+    padding-left: 10%;
   }
 }
 
@@ -1216,6 +1229,78 @@ body {
   color: var(--white);
   max-width: 750px;
   padding-right: var(--span-xs);
+}
+
+.steps__wrapper {
+  padding-top: var(--span-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .steps__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .steps__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.steps__card {
+  cursor: pointer;
+  background: transparent;
+  transition: 300ms;
+  padding: var(--span-xl) var(--span-m);
+}
+
+.steps__card:hover {
+  background: var(--pink);
+}
+
+.steps__icon {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  align-items: center;
+  justify-content: center;
+}
+
+.steps__image {
+  display: block;
+}
+
+.steps__body {
+  margin-top: var(--span-s);
+}
+
+.steps__heading {
+  font-family: var(--family);
+  font-size: calc(var(--size-l) + 3px);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.steps__paragraph {
+  margin-top: var(--span-xs);
+  font-family: var(--family);
+  font-size: calc(var(--size-m) + 2px);
+  font-style: normal;
+  font-weight: var(--weight-sm);
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
 }
 
 .section-contact-intro {

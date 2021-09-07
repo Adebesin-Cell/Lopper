@@ -104,6 +104,12 @@
       grid-column-end: -1;
     }
   }
+
+  &__socials {
+    @media only screen and (max-width: 600px) {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .contact {

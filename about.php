@@ -174,11 +174,52 @@
                 <h1 class="steps__banner">
                     Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
                 </h1>
+                <div class="steps__wrapper">
+                    <div class="steps__card">
+                        <div class="steps__icon">
+                            <img src="assets/icons/planetary-white.svg" alt="Research" class="steps__image">
+                        </div>
+                        <div class="steps__body">
+                            <h1 class="steps__heading">
+                                Research
+                            </h1>
+                            <p class="steps__paragraph">
+                                Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__icon">
+                            <img src="assets/icons/planetary-white.svg" alt="Marketing" class="steps__image">
+                        </div>
+                        <div class="steps__body">
+                            <h1 class="steps__heading">
+                                Marketing
+                            </h1>
+                            <p class="steps__paragraph">
+                                Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__icon">
+                            <img src="assets/icons/planetary-white.svg" alt="Results" class="steps__image">
+                        </div>
+                        <div class="steps__body">
+                            <h1 class="steps__heading">
+                                Results
+                            </h1>
+                            <p class="steps__paragraph">
+                                Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+</section>
 <?php
-    include "includes/testimonial.php";
+    // include "includes/testimonial.php";
     include "includes/newsletter.php";
     include "includes/footer.php";
 ?>

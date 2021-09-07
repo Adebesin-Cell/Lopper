@@ -327,6 +327,7 @@
 
     @media only screen and (max-width: 1200px) {
       padding-right: 10%;
+      padding-left: 10%;
     }
 
     &-wrapper {
@@ -397,5 +398,70 @@
     color: var(--white);
     max-width: 750px;
     padding-right: var(--span-xs);
+  }
+
+  &__wrapper {
+    padding-top: var(--span-2xl);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    @media only screen and (max-width: 1140px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    cursor: pointer;
+    background: transparent;
+    transition: 300ms;
+    padding: var(--span-xl) var(--span-m);
+    &:hover {
+      background: var(--pink);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__body {
+    margin-top: var(--span-s);
+  }
+
+  &__heading {
+    font-family: var(--family);
+    font-size: calc(var(--size-l) + 3px);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+  }
+
+  &__paragraph {
+    margin-top: var(--span-xs);
+    font-family: var(--family);
+    font-size: calc(var(--size-m) + 2px);
+    font-style: normal;
+    font-weight: var(--weight-sm);
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
   }
 }
