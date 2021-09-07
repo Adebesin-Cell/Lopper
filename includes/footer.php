@@ -157,7 +157,19 @@
             </div>
         </div>
     </footer>
+    <!-- <script src="assets/Js/magic_mouse.js"></script> -->
     <script src="Js/preloader.js"></script>
     <script src="Js/App.js"></script>
+    <script>
+        //  options = {
+        //     "cursorOuter": "circle-basic",
+        //     "hoverEffect": "circle-move",
+        //     "hoverItemMove": false,
+        //     "defaultCursor": false,
+        //     "outerWidth": 30,
+        //     "outerHeight": 30
+        // };
+    // magicMouse(options);
+    </script>
 </body>
 </html>
