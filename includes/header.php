@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looper is a software company that deals in Building and mentoring Web devs, Building Web , Mobile, Desktop Applications. We also available for build software services for people to use.">
     <title>Looper | Software Development Company</title>
     <!-- <link rel="stylesheet" href="assets/css/magic-mouse.css"> -->
     <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
