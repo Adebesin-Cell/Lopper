@@ -241,7 +241,7 @@
         });
     </script>
 <?php
-    // include "includes/testimonial.php";
+    include "includes/testimonial.php";
     include "includes/newsletter.php";
     include "includes/footer.php";
 ?>
