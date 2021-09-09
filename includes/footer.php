@@ -165,7 +165,26 @@
     <script src="Js/preloader.js"></script>
     <script src="Js/App.js"></script>
     <script>
-
+        $('.owl-carousel').owlCarousel({
+            animateOut: 'slideOutDown',
+		    animateIn: 'zoomIn',
+			loop:true,
+			margin:0,
+			nav:true,
+			smartSpeed: 300,
+			autoplay: 7000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
 
     </script>
 </body>
