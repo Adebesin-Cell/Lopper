@@ -132,6 +132,10 @@
   @media only screen and (max-width: 1200px) {
     padding-left: 5%;
   }
+
+  @media only screen and (max-width: 600px) {
+    padding-top: var(--span-2xl);
+  }
 }
 
 .our-intro {
@@ -222,7 +226,6 @@
     }
 
     &-container {
-      // grid-row: -1;
       grid-row-start: 2;
       grid-row-end: 6;
       grid-column-start: 1;
@@ -414,8 +417,7 @@
 .section-services {
   margin-top: -3px;
   background: var(--background);
-  padding-top: calc(2 * var(--span-2xl));
-  padding-bottom: calc(2 * var(--span-2xl));
+  @include section-space;
 }
 
 .services {

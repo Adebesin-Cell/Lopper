@@ -1,6 +1,5 @@
 .footer {
-  padding-top: calc(2 * var(--span-2xl));
-  padding-bottom: calc(2 * var(--span-2xl));
+  @include section-space;
   background: var(--background);
 
   &__wrapper {
@@ -45,6 +44,10 @@
     text-align: left;
     color: var(--white);
     max-width: 170px;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s) - 1px);
+      line-height: 23px;
+    }
 
     &-box {
       @media only screen and (max-width: 600px) {
@@ -65,10 +68,18 @@
     color: var(--white);
     text-transform: uppercase;
     margin-bottom: var(--span-s);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 20px;
+      margin-bottom: var(--span-xs);
+    }
 
     span {
       position: relative;
       padding-bottom: 10px;
+      @media only screen and (max-width: 600px) {
+        padding-bottom: 6px;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -96,6 +107,10 @@
     color: var(--white);
     display: inline-block;
     text-decoration: none;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 20px;
+    }
   }
 
   &__contact {
@@ -138,6 +153,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-s);
+      line-height: 23px;
+    }
   }
 }
 
@@ -148,18 +167,34 @@
     padding-top: var(--span-m);
     flex-wrap: wrap;
     align-items: center;
+    @media only screen and (max-width: 600px) {
+      padding-top: var(--span-s);
+    }
   }
 
   &__item {
     padding-bottom: var(--span-l);
+    @media only screen and (max-width: 600px) {
+      padding-bottom: 0;
+    }
 
     &:not(:last-child) {
       margin-right: var(--span-l);
+      @media only screen and (max-width: 600px) {
+        margin-right: var(--span-s);
+      }
     }
   }
 
   &__link {
     display: inline-block;
     text-decoration: none;
+
+    svg {
+      @media only screen and (max-width: 600px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }

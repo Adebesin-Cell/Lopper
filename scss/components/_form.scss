@@ -2,6 +2,9 @@
   padding-top: var(--span-xl);
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 
   &__group {
     display: flex;
@@ -22,6 +25,9 @@
     color: var(--dark-grey);
     background: transparent;
     appearance: none;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
     &:focus {
       border: none;
       outline: none;
@@ -57,6 +63,9 @@
       outline: none;
     }
     cursor: pointer;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -78,5 +87,69 @@
     align-items: center;
     border: 1px solid rgba(246, 16, 103, 0.5);
     border-radius: 50%;
+  }
+}
+
+.mobile-form {
+  display: none;
+  padding-top: var(--span-s);
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+
+  &__group {
+    display: flex;
+    // border-radius: 10px;
+    box-shadow: none;
+    border-bottom: 0.2px solid var(--overlay);
+    // padding: 5px var(--span-s);
+    padding-bottom: 5px;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: calc(var(--size-xs) - 2px);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: var(--dark-grey);
+    background: transparent;
+    appearance: none;
+    display: block;
+
+    width: calc(100% - 24px);
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: inherit;
+      font-size: calc(var(--size-xs) - 2px);
+      font-style: normal;
+      font-weight: var(--weight-xxlg);
+      line-height: 23px;
+      letter-spacing: 4px;
+      text-align: left;
+      text-transform: uppercase;
+      color: var(--dark-grey);
+    }
+  }
+
+  &__btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--pink);
   }
 }

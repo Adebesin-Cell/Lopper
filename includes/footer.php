@@ -97,6 +97,8 @@
                                     contact@lop.com
                                 </span>
                             </a>
+                        </li>
+                        <li class="footer__item">
                             <a href="tel:856-693-456" class="contact__link" name="856-693-456">
                                 <span class="contact__icon">
                                     <svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,19 +159,14 @@
             </div>
         </div>
     </footer>
+    <script src="assets/Js/jquery.min.js"></script>
+    <script src="assets/owl.carousel.min.js"></script>
     <!-- <script src="assets/Js/magic_mouse.js"></script> -->
     <script src="Js/preloader.js"></script>
     <script src="Js/App.js"></script>
     <script>
-        //  options = {
-        //     "cursorOuter": "circle-basic",
-        //     "hoverEffect": "circle-move",
-        //     "hoverItemMove": false,
-        //     "defaultCursor": false,
-        //     "outerWidth": 30,
-        //     "outerHeight": 30
-        // };
-    // magicMouse(options);
+
+
     </script>
 </body>
 </html>

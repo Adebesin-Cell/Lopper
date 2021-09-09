@@ -1,7 +1,6 @@
 .section-newsletter {
   background: var(--light);
-  padding-top: calc(2 * var(--span-2xl));
-  padding-bottom: calc(2 * var(--span-2xl));
+  @include section-space;
 }
 
 .newsletter {
@@ -14,6 +13,10 @@
     letter-spacing: 0em;
     text-align: center;
     color: var(--header);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xl));
+      line-height: 56px;
+    }
   }
   &__paragraph {
     margin-top: var(--span-s);
@@ -25,5 +28,9 @@
     letter-spacing: 0em;
     text-align: center;
     color: var(--paragraph);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-m));
+      line-height: 26px;
+    }
   }
 }
