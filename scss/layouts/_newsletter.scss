@@ -15,7 +15,7 @@
     color: var(--header);
     @media only screen and (max-width: 600px) {
       font-size: calc(var(--size-xl));
-      line-height: 56px;
+      line-height: 36px;
     }
   }
   &__paragraph {

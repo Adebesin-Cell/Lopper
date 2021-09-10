@@ -48,6 +48,7 @@
 
 .about-us {
   &__header {
+    text-transform: uppercase;
     font-family: var(--family);
     font-size: calc(var(--size-s) - 1px);
     font-style: normal;
