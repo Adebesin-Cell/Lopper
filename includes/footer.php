@@ -166,13 +166,12 @@
     <script src="Js/App.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
-            animateOut: 'slideOutDown',
-		    animateIn: 'zoomIn',
 			loop:true,
 			margin:0,
 			nav:true,
-			smartSpeed: 300,
-			autoplay: 7000,
+            dots:false,
+			smartSpeed: 500,
+			autoplay: 1000,
             responsive:{
                 0:{
                     items:1
@@ -185,7 +184,6 @@
                 }
             }
         })
-
     </script>
 </body>
 </html>

@@ -113,21 +113,23 @@
     }
   }
 
-  &__prev {
+  &__wrapper .owl-prev {
     position: absolute;
-    left: 5%;
-    bottom: 30%;
+    left: 0%;
+    bottom: 10%;
     z-index: 2;
-    transform: translate(-5%, -30%);
-    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid red !important;
   }
 
-  &__next {
+  &__wrapper .owl-next {
     position: absolute;
-    right: 5%;
-    bottom: 30%;
+    right: 0%;
+    bottom: 10%;
     z-index: 2;
-    transform: translate(-5%, -30%);
-    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid red !important;
   }
 }

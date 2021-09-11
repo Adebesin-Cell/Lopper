@@ -50,14 +50,6 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonial__controls owl-nav">
-                <button type="button" class="testimonial__prev owl-prev" role="presentation">
-                    Prev
-                </button>
-                <button type="button" class="testimonial__next owl-next" role="presentation">
-                    Next
-                </button>
-            </div>
         </div>
     </div>
 </section>

@@ -466,6 +466,9 @@
       @media only screen and (max-width: 1200px) {
         padding-right: 65px;
       }
+      @media only screen and (max-width: 768px) {
+        padding-right: 30px;
+      }
     }
 
     &--2 {
@@ -477,6 +480,9 @@
       }
       @media only screen and (max-width: 1200px) {
         padding-left: 65px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-left: 30px;
       }
     }
   }
