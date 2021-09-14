@@ -98,6 +98,50 @@
             &nbsp;
         </div>
     </section>
+    <!-- Section about features --mobile -->
+    <section class="mobile-about-features">
+        <div class="mobile-what-we-do">
+            <div class="container">
+                <h1 class="mobile-what-we-do__header">
+                    What we do
+                </h1>
+                <h1 class="mobile-what-we-do__banner">
+                    What we do
+                </h1>
+            </div>
+        </div>
+        <div class="mobile-about-features__wrapper">
+            <div class="mobile-about-features__image-box">
+                <img src="assets/images/features.png" alt="features" class="mobile-about-features__image">
+            </div>
+            <div class="container">
+                <div class="mobile-about-features__card">
+                    <h1 class="mobile-about-features__header">
+                        We build great business
+                    </h1>
+                    <p class="mobile-about-features__paragraph">
+                        Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.
+                    </p>
+                </div>
+                <div class="mobile-about-features__card">
+                    <h1 class="mobile-about-features__header">
+                        We build great business
+                    </h1>
+                    <p class="mobile-about-features__paragraph">
+                        Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.
+                    </p>
+                </div>
+                <div class="mobile-about-features__card">
+                    <h1 class="mobile-about-features__header">
+                        We build great business
+                    </h1>
+                    <p class="mobile-about-features__paragraph">
+                        Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section-clients">
         <div class="clients">
             <div class="container">
@@ -162,6 +206,59 @@
             </div>
             <div class="clients__overlay">
                 &nbsp;
+            </div>
+        </div>
+        <div class="mobile-clients__info">
+            <div class="mobile-clients__text">
+                <div class="container">
+                    <h1 class="mobile-clients__heading">
+                        We build great business
+                    </h1>
+                    <p class="mobile-clients__paragraph">
+                        <span>
+                            Nisl condimentum id venenatis a. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Sollicitudin tempor id eu nisl nunc. 
+                        </span>
+                        <span>
+                            Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae.
+                        </span>
+                        <span>
+                            Massa massa ultricies mi quis hendrerit dolor magna. Egestas dui id ornare arcu odio..
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="mobile-clients__logos">
+                <div class="container">
+                    <h1 class="mobile-clients__title">
+                        Our clients
+                    </h1>
+                    <div class="mobile-clients__logos-wrapper">
+                        <div class="mobile-clients__card">
+                            <div class="mobile-clients__left">
+                                <img src="assets/icons/codepen.svg" alt="codepen" class="mobile-clients__image">
+                            </div>
+                            <div class="mobile-clients__right">
+                                <img src="assets/icons/dribble.svg" alt="dribble" class="mobile-clients__image">
+                            </div>
+                        </div>
+                        <div class="mobile-clients__card">
+                            <div class="mobile-clients__left">
+                                <img src="assets/icons/dribble.svg" alt="dribble" class="mobile-clients__image">
+                            </div>
+                            <div class="mobile-clients__right">
+                                <img src="assets/icons/codepen.svg" alt="codepen" class="mobile-clients__image">
+                            </div>
+                        </div>
+                        <div class="mobile-clients__card">
+                            <div class="mobile-clients__left">
+                                <img src="assets/icons/codepen.svg" alt="codepen" class="mobile-clients__image">
+                            </div>
+                            <div class="mobile-clients__right">
+                                <img src="assets/icons/dribble.svg" alt="dribble" class="mobile-clients__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

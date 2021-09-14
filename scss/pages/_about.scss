@@ -15,6 +15,9 @@
     align-items: flex-end;
     height: 100%;
     padding-bottom: calc(2 * var(--span-2xl) - var(--span-xs));
+    @media only screen and (max-width: 600px) {
+      padding-bottom: calc(var(--span-2xl) + var(--span-m));
+    }
   }
 
   &__header {
@@ -26,6 +29,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--pink);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 56px;
+    }
   }
 
   &__paragraph {
@@ -38,6 +45,10 @@
     text-align: left;
     color: var(--white);
     text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 26px;
+    }
   }
 }
 
@@ -57,6 +68,11 @@
     letter-spacing: 6px;
     text-align: left;
     color: var(--pink);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -71,6 +87,14 @@
     color: var(--header);
     max-width: 750px;
     padding-right: var(--span-xs);
+    @media only screen and (max-width: 1140px) {
+      margin-top: var(--span-xs);
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-m) + 2px);
+      line-height: 30px;
+    }
   }
 
   &__wrapper {
@@ -78,6 +102,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 130px;
+    @media only screen and (max-width: 1140px) {
+      grid-gap: 65px;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: var(--span-xl);
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px;
+    }
   }
 
   &__title {
@@ -89,6 +121,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--header);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
   }
 
   &__paragraph {
@@ -100,6 +136,15 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+    color: var(--paragraph);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 25px;
+    }
   }
 }
 
@@ -107,6 +152,12 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 150px 120px repeat(5, 150px) 80px;
+  @media only screen and (max-width: 1140px) {
+    grid-template-rows: 150px 120px repeat(5, 150px);
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .what-we-do {
@@ -139,6 +190,11 @@
     letter-spacing: 6px;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -151,6 +207,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xl));
+      line-height: 56px;
+    }
   }
 }
 
@@ -217,6 +278,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-l));
+      line-height: 35px;
+    }
   }
 
   &__paragraph {
@@ -228,6 +293,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1140px) {
+      font-size: calc(var(--size-m));
+      line-height: 25px;
+    }
   }
 }
 
@@ -250,6 +319,11 @@
     text-align: left;
     color: var(--pink);
     text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -263,16 +337,30 @@
     color: var(--header);
     max-width: 760px;
     padding-right: var(--span-s);
+    @media only screen and (max-width: 768px) {
+      font-size: var(--size-xl);
+      line-height: 45px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-l));
+      line-height: 35px;
+    }
   }
 
   &__wrapper {
     padding-bottom: calc(2 * var(--size-2xl));
+    @media only screen and (max-width: 600px) {
+      padding-bottom: var(--span-l);
+    }
   }
 
   &__info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px) 70px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -291,6 +379,14 @@
     @media only screen and (max-width: 1200px) {
       padding-left: 10%;
     }
+
+    @media only screen and (max-width: 1140px) {
+      padding-right: var(--span-2xl);
+    }
+    @media only screen and (max-width: 768px) {
+      padding-top: var(--span-2xl);
+      padding-bottom: var(--span-2xl);
+    }
   }
 
   &__heading {
@@ -302,6 +398,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--pink);
+    @media only screen and (max-width: 768px) {
+      font-size: var(--size-xl);
+      line-height: 40px;
+    }
   }
 
   &__paragraph {
@@ -314,6 +414,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-m);
+    }
 
     span {
       display: block;
@@ -392,6 +495,11 @@
     letter-spacing: 6px;
     text-align: left;
     color: var(--pink);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -406,6 +514,14 @@
     color: var(--white);
     max-width: 750px;
     padding-right: var(--span-xs);
+    @media only screen and (max-width: 1140px) {
+      margin-top: var(--span-xs);
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-m) + 2px);
+      line-height: 30px;
+    }
   }
 
   &__wrapper {
@@ -418,6 +534,9 @@
     }
     @media only screen and (max-width: 600px) {
       grid-template-columns: repeat(1, 1fr);
+      padding-top: var(--span-m);
+      grid-gap: 40px;
+      margin: 0 -5%;
     }
   }
 
@@ -428,6 +547,9 @@
     padding: var(--span-xl) var(--span-m);
     &:hover {
       background: var(--pink);
+    }
+    @media only screen and (max-width: 600px) {
+      padding: var(--span-l) var(--span-s);
     }
   }
 
@@ -459,6 +581,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-l);
+      line-height: 35px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-m) + 2px);
+      line-height: 25px;
+    }
   }
 
   &__paragraph {
@@ -471,5 +601,164 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1140px) {
+      font-size: var(--size-m);
+      line-height: 25px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 25px;
+    }
+  }
+}
+
+.mobile {
+  &-about-features {
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
+    &__image {
+      display: block;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    &__wrapper {
+      background: var(--background);
+      padding-bottom: var(--span-2xl);
+    }
+
+    &__header {
+      font-family: var(--family);
+      font-size: calc(var(--size-m) + 2px);
+      line-height: 30px;
+      font-style: normal;
+      font-weight: var(--weight-md);
+      letter-spacing: 0px;
+      text-align: left;
+      color: var(--white);
+    }
+
+    &__paragraph {
+      margin-top: var(--span-xs);
+      font-family: var(--family);
+      font-size: calc(var(--size-s));
+      line-height: 25px;
+      font-style: normal;
+      font-weight: var(--weight-md);
+      letter-spacing: 0px;
+      text-align: left;
+      color: var(--white);
+    }
+
+    &__card {
+      padding-top: var(--span-l);
+    }
+  }
+
+  &-what-we-do {
+    padding-top: var(--span-2xl);
+    background: var(--background);
+    &__header {
+      text-transform: uppercase;
+      font-family: var(--family);
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+      font-style: normal;
+      font-weight: var(--weight-xxlg);
+      letter-spacing: 6px;
+      text-align: left;
+      color: var(--white);
+    }
+
+    &__banner {
+      font-size: calc(var(--size-xl));
+      line-height: 56px;
+      font-family: var(--family);
+      font-style: normal;
+      font-weight: var(--weight-md);
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--white);
+      padding-bottom: var(--span-l);
+    }
+  }
+
+  &-clients {
+    &__info {
+      display: block;
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    &__text {
+      padding-top: var(--span-2xl);
+      padding-bottom: var(--span-2xl);
+      background: var(--background);
+    }
+
+    &__heading {
+      font-size: calc(var(--size-l));
+      line-height: 40px;
+      font-family: var(--family);
+      font-style: normal;
+      font-weight: var(--weight-md);
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--pink);
+      padding-bottom: var(--span-xs);
+    }
+
+    &__paragraph {
+      font-size: var(--size-s);
+      line-height: 25px;
+      font-family: var(--family);
+      font-style: normal;
+      font-weight: var(--weight-md);
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--white);
+      span {
+        display: block;
+        margin-bottom: var(--span-xs);
+      }
+    }
+
+    &__logos {
+      background: var(--light);
+      padding-top: var(--span-2xl);
+      padding-bottom: var(--span-2xl);
+      &-wrapper {
+        padding-top: var(--span-l);
+        display: grid;
+        grid-row-gap: 60px;
+      }
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-family: var(--family);
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+      font-style: normal;
+      font-weight: var(--weight-xxlg);
+      letter-spacing: 6px;
+      text-align: left;
+      color: var(--header);
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+    }
+
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 65px;
+    }
   }
 }
