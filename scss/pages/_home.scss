@@ -9,6 +9,9 @@
 .intro {
   padding-top: var(--span-l);
   padding-bottom: calc(var(--span-2xl) + var(--span-2xl));
+  @media only screen and (max-width: 600px) {
+    padding-bottom: calc(var(--span-2xl));
+  }
 
   &__wrapper {
     display: flex;
@@ -23,6 +26,10 @@
     line-height: 30px;
     letter-spacing: 4px;
     text-align: left;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -37,6 +44,12 @@
     @media only screen and (max-width: 1024px) {
       font-size: calc(var(--size-2xl) + var(--size-xl));
       line-height: 98px;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: var(--span-xs);
+      font-size: var(--size-2xl);
+      line-height: 64px;
+      padding-bottom: var(--span-m);
     }
 
     span {
@@ -81,6 +94,9 @@
     }
     @media only screen and (max-width: 1024px) {
       max-width: 650px;
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
     }
   }
 
@@ -147,6 +163,8 @@
 
   @media only screen and (max-width: 600px) {
     padding-top: var(--span-2xl);
+    padding-right: 5%;
+    padding-bottom: var(--span-2xl);
   }
 }
 
@@ -162,9 +180,17 @@
     grid-gap: 50px;
   }
 
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
   &__text {
     padding-top: var(--span-2xl);
     padding-bottom: var(--span-2xl);
+    @media only screen and (max-width: 600px) {
+      padding-top: 0;
+    }
   }
 
   &__header {
@@ -177,6 +203,10 @@
     text-align: left;
     color: var(--pink);
     text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -188,6 +218,11 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--header);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xl));
+      line-height: 56px;
+    }
   }
 
   &__sub-header {
@@ -203,6 +238,11 @@
     max-width: 460px;
     @media only screen and (min-width: 1800px) {
       max-width: 600px;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-top: 0;
+      font-size: calc(var(--size-m));
+      line-height: 25px;
     }
   }
 
@@ -220,6 +260,11 @@
     @media only screen and (min-width: 1800px) {
       max-width: 600px;
     }
+    @media only screen and (max-width: 600px) {
+      padding-top: var(--span-s);
+      font-size: calc(var(--size-s));
+      line-height: 25px;
+    }
   }
 
   &__image {
@@ -235,6 +280,9 @@
       grid-template-columns: 1fr 50px 1fr 50px 50px 50px 50px 1fr;
       grid-template-rows: 50px repeat(2, 200px) 100px 200px 100px;
       position: relative;
+      @media only screen and (max-width: 600px) {
+        display: block;
+      }
     }
 
     &-container {
@@ -299,6 +347,9 @@
 
 .section-features {
   margin-top: calc(-1 * var(--span-2xl));
+  @media only screen and (max-width: 600px) {
+    margin-top: 0;
+  }
 }
 
 .features {
@@ -336,6 +387,9 @@
 
   @media only screen and (max-width: 1200px) {
     grid-template-columns: 1fr 175px 135px 200px;
+  }
+  @media only screen and (max-width: 1024px) {
+    display: none;
   }
 
   &__text {
@@ -451,6 +505,11 @@
     text-align: center;
     color: var(--pink);
     text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xs) - 2px);
+      line-height: 24px;
+    }
   }
 
   &__banner {
@@ -462,6 +521,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: var(--white);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-xl));
+      line-height: 56px;
+    }
   }
 
   &__sub-header {
@@ -476,6 +540,11 @@
     max-width: 560px;
     margin: 0 auto;
     margin-top: var(--span-s);
+    @media only screen and (max-width: 600px) {
+      margin-top: 0;
+      font-size: calc(var(--size-s));
+      line-height: 23px;
+    }
   }
   &__wrapper {
     padding-top: var(--span-xl);

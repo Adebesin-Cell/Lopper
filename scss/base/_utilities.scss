@@ -7,3 +7,9 @@
     color: var(--overlay);
   }
 }
+
+.sm-u-mt {
+  @media only screen and (max-width: 600px) {
+    margin-top: var(--span-xl) !important;
+  }
+}

@@ -63,7 +63,7 @@
                 <p class="our-intro__paragraph">
                     By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
                 </p>
-                <a href="services.php" class="btn btn--pink">
+                <a href="services.php" class="btn btn--pink sm-u-mt">
                     Learn more
                 </a>
             </div>  
