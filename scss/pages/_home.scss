@@ -34,6 +34,10 @@
     letter-spacing: 0em;
     text-align: left;
     padding-bottom: calc(var(--span-2xl) + var(--span-xs));
+    @media only screen and (max-width: 1024px) {
+      font-size: calc(var(--size-2xl) + var(--size-xl));
+      line-height: 98px;
+    }
 
     span {
       display: block;
@@ -75,6 +79,9 @@
     @media only screen and (max-width: 1200px) {
       padding-left: 5%;
     }
+    @media only screen and (max-width: 1024px) {
+      max-width: 650px;
+    }
   }
 
   &__paragraph {
@@ -86,6 +93,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--white);
+    @media only screen and (max-width: 1024px) {
+      font-size: calc(var(--size-m));
+      line-height: 29px;
+    }
   }
 
   &__icon {
@@ -471,6 +482,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 80px;
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 65px;
+    }
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px;
+    }
   }
 
   &__icon {
@@ -512,7 +531,7 @@
     font-weight: var(--weight-sm);
     line-height: 26px;
     letter-spacing: 0em;
-    text-align: justify;
+    text-align: left;
     color: var(--white);
   }
 

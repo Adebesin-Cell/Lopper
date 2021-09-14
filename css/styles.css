@@ -2199,6 +2199,13 @@ body {
   padding-bottom: calc(var(--span-2xl) + var(--span-xs));
 }
 
+@media only screen and (max-width: 1024px) {
+  .intro__banner {
+    font-size: calc(var(--size-2xl) + var(--size-xl));
+    line-height: 98px;
+  }
+}
+
 .intro__banner span {
   display: block;
 }
@@ -2249,6 +2256,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .intro__view {
+    max-width: 650px;
+  }
+}
+
 .intro__paragraph {
   font-family: var(--family);
   font-size: calc(var(--size-m) + 2px);
@@ -2258,6 +2271,13 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--white);
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro__paragraph {
+    font-size: calc(var(--size-m));
+    line-height: 29px;
+  }
 }
 
 .intro__icon {
@@ -2719,6 +2739,20 @@ body {
   grid-gap: 80px;
 }
 
+@media only screen and (max-width: 768px) {
+  .services__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 65px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+}
+
 .services__icon {
   width: 72px;
   height: 72px;
@@ -2761,7 +2795,7 @@ body {
   font-weight: var(--weight-sm);
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: justify;
+  text-align: left;
   color: var(--white);
 }
 
