@@ -51,19 +51,7 @@
     list-style-type: none;
   }
 
-  &__link {
-    display: inline-block;
-    color: inherit;
-    font-family: var(--family);
-    font-size: var(--size-s);
-    font-style: normal;
-    font-weight: var(--weight-xxlg);
-    line-height: 30px;
-    letter-spacing: 2px;
-    text-align: left;
-    text-decoration: none;
-    text-transform: capitalize;
-
+  &__item {
     &:not(:first-child) {
       padding: 0 calc(var(--span-s) + 5px);
       @media only screen and (max-width: 1024px) {
@@ -87,6 +75,20 @@
         padding-left: calc(var(--span-xs) + 5px);
       }
     }
+  }
+
+  &__link {
+    display: inline-block;
+    color: inherit;
+    font-family: var(--family);
+    font-size: var(--size-s);
+    font-style: normal;
+    font-weight: var(--weight-xxlg);
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
   }
 
   &__contact {

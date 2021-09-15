@@ -1,7 +1,6 @@
 .footer {
   @include section-space;
-  background: var(--background);
-
+  background: var(--overlay);
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2fr;

@@ -12,12 +12,18 @@
                 <a href="index.php" class="header__link" name="Home">
                     Home
                 </a>
+            </li>
+            <li class="header__item">
                 <a href="services.php" class="header__link" name="Services">
                     Services
                 </a>
+            </li>
+            <li class="header__item">
                 <a href="gallery.php" class="header__link" name="Work">
                     Work
                 </a>
+            </li>
+            <li class="header__item">
                 <a href="about.php" class="header__link" name="About">
                     About
                 </a>
