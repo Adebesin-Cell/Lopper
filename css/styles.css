@@ -2451,6 +2451,51 @@ body {
   text-transform: uppercase;
 }
 
+.section-gallery {
+  padding-top: calc(2 * var(--span-2xl));
+  padding-bottom: calc(2 * var(--span-2xl));
+}
+
+@media only screen and (max-width: 600px) {
+  .section-gallery {
+    padding-top: var(--span-2xl);
+    padding-bottom: var(--span-2xl);
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+}
+
+.gallery__box--3 {
+  margin-top: calc(-2 * var(--span-2xl));
+  grid-column: 1 / -1;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery__box--3 {
+    z-index: initial;
+    grid-column: initial;
+  }
+}
+
+.gallery__box--4 {
+  margin-top: calc(-1.5 * var(--span-2xl));
+}
+
 .section-home-intro {
   background: var(--overlay) url(../assets/images/background.png);
   background-size: cover;

@@ -161,7 +161,6 @@
     </footer>
     <script src="assets/Js/jquery.min.js"></script>
     <script src="assets/owl.carousel.min.js"></script>
-    <!-- <script src="assets/Js/magic_mouse.js"></script> -->
     <script src="Js/preloader.js"></script>
     <script src="Js/App.js"></script>
     <script>
