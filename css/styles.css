@@ -2240,6 +2240,7 @@ body {
   .contact__content {
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: var(--span-2xl);
   }
 }
 
@@ -2612,7 +2613,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .mobile-contact-form {
-    padding: var(--span-l) var(--span-s);
+    padding: var(--span-2xl) var(--span-s);
     margin: 0 -5%;
   }
 }

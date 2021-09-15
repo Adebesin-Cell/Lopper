@@ -80,6 +80,7 @@
     @media only screen and (max-width: 600px) {
       padding-left: 5%;
       padding-right: 5%;
+      padding-bottom: var(--span-2xl);
     }
   }
 
@@ -389,7 +390,7 @@
     background: var(--background);
     padding: var(--span-l);
     @media only screen and (max-width: 600px) {
-      padding: var(--span-l) var(--span-s);
+      padding: var(--span-2xl) var(--span-s);
       margin: 0 -5%;
     }
 
