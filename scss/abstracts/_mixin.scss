@@ -2,6 +2,11 @@
   padding-top: calc(2 * var(--span-2xl));
   padding-bottom: calc(2 * var(--span-2xl));
 
+  @media only screen and (max-width: 768px) {
+    padding-top: calc(2 * var(--span-l) - var(--span-xs));
+    padding-bottom: calc(2 * var(--span-l) - var(--span-xs));
+  }
+
   @media only screen and (max-width: 600px) {
     padding-top: var(--span-2xl);
     padding-bottom: var(--span-2xl);

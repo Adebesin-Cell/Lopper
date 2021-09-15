@@ -15,6 +15,9 @@
     align-items: flex-end;
     height: 100%;
     padding-bottom: calc(2 * var(--span-2xl) - var(--span-xs));
+    @media only screen and (max-width: 600px) {
+      padding-bottom: calc(var(--span-2xl) + var(--span-m));
+    }
   }
 
   &__header {
@@ -26,6 +29,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--pink);
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-xl) + 4px);
+      line-height: 56px;
+    }
   }
 
   &__paragraph {
@@ -38,6 +45,10 @@
     text-align: left;
     color: var(--white);
     text-transform: uppercase;
+    @media only screen and (max-width: 600px) {
+      font-size: calc(var(--size-s));
+      line-height: 26px;
+    }
   }
 }
 
@@ -45,6 +56,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 115px;
+  @media only screen and (max-width: 768px) {
+    grid-gap: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
   &__content {
     position: relative;
     padding-top: 25%;
@@ -59,13 +77,19 @@
     @media only screen and (max-width: 1200px) {
       padding-left: 10%;
     }
+    @media only screen and (max-width: 600px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   &__image {
     display: block;
     width: 100%;
     object-fit: cover;
-
+    @media only screen and (max-width: 600px) {
+      height: 400px;
+    }
     &-box {
       z-index: 2;
     }
@@ -88,6 +112,11 @@
     text-align: left;
     color: var(--header);
     max-width: 265px;
+    @media only screen and (max-width: 600px) {
+      max-width: 100%;
+      font-size: var(--size-l);
+      line-height: 35px;
+    }
   }
 
   &__card {
@@ -105,6 +134,14 @@
     text-align: left;
     color: var(--header);
     text-transform: uppercase;
+    @media only screen and (max-width: 768px) {
+      font-size: var(--size-m);
+      line-height: 30px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-s);
+      line-height: 25px;
+    }
   }
 
   &__info {
@@ -117,6 +154,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--paragraph);
+    @media only screen and (max-width: 768px) {
+      font-size: var(--size-m);
+      line-height: 30px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-s);
+      line-height: 25px;
+    }
     span {
       display: block;
     }
@@ -125,6 +170,17 @@
   &-card__icon {
     display: flex;
     margin-right: var(--span-xl);
+    svg {
+      width: 32px;
+      height: 32px;
+      @media only screen and (max-width: 600px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      margin-right: var(--span-m);
+    }
   }
 
   &__list {
@@ -140,11 +196,20 @@
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: var(--span-xl);
-
+    @media only screen and (max-width: 600px) {
+      margin-right: var(--span-m);
+    }
     svg {
       width: 24px;
       height: 24px;
+      @media only screen and (max-width: 600px) {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 
@@ -160,6 +225,14 @@
     color: var(--header);
     text-decoration: none;
     display: inline-block;
+    @media only screen and (max-width: 768px) {
+      font-size: var(--size-m);
+      line-height: 30px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: var(--size-xs);
+      line-height: 25px;
+    }
   }
 }
 
@@ -188,6 +261,10 @@
   @media only screen and (max-width: 1024px) {
     height: 520px;
     margin-top: calc(0 * var(--span-2xl));
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -291,5 +368,85 @@
 
   &__btn {
     height: 55px;
+  }
+}
+
+.section-mobile-contact-form {
+  background: var(--overlay);
+  display: block;
+  padding-top: var(--span-2xl);
+  padding-bottom: var(--span-2xl);
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+}
+
+.mobile {
+  &-contact-form {
+    background: var(--background);
+    padding: var(--span-l);
+    @media only screen and (max-width: 600px) {
+      padding: var(--span-l) var(--span-s);
+      margin: 0 -5%;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: var(--span-l);
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    &__label {
+      display: block;
+      font-family: var(--family);
+      font-size: calc(var(--size-xs) - 2px);
+      font-style: normal;
+      font-weight: var(--weight-xxlg);
+      line-height: 26px;
+      letter-spacing: 6px;
+      text-align: left;
+      color: var(--white);
+      text-transform: uppercase;
+      padding-bottom: var(--span-xs);
+    }
+
+    &__input {
+      display: block;
+      width: 100%;
+      height: 40px;
+      padding: var(--span-xs) var(--span-s);
+      outline: none;
+      border: 1px solid #f4f4ed;
+      background: var(--white);
+      appearance: none;
+    }
+
+    &__textarea {
+      display: block;
+      width: 100%;
+      padding: var(--span-xs) var(--span-s);
+      outline: none;
+      border: 1px solid #f4f4ed;
+      background: var(--white);
+      appearance: none;
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: var(--family);
+      font-size: calc(var(--size-m));
+      font-style: normal;
+      font-weight: var(--weight-sm);
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--dark-grey);
+    }
   }
 }

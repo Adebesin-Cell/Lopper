@@ -91,11 +91,11 @@
                 <div class="contact-form__input-group">
                     <div class="contact-form__group">
                         <label for="name" class="contact-form__label">Your name</label>
-                        <input type="text" name="your name" id="name" placeholder="Your name" class="contact-form__input">
+                        <input type="text" name="your name" id="name" placeholder="Your name" class="contact-form__input" required>
                     </div>
                     <div class="contact-form__group">
                         <label for="email" class="contact-form__label">Your email</label>
-                        <input type="email" name="your email" id="email" placeholder="Your email" class="contact-form__input">
+                        <input type="email" name="your email" id="email" placeholder="Your email" class="contact-form__input" required>
                     </div>
                 </div>
                 <div class="contact-form__content">
@@ -107,6 +107,27 @@
                 <button type="submit" class="contact-form__btn btn btn--pink">Send message</button>
             </div>
         </form>
+    </section>
+    <!-- Tablet and Mobile -->
+    <section class="section-mobile-contact-form">
+        <div class="container">
+            <form action="#" class="mobile-contact-form">
+                <div class="mobile-contact-form__wrapper">
+                    <div class="mobile-contact-form__group">
+                        <label for="name" class="mobile-contact-form__label">Your Name</label>
+                        <input type="text" class="mobile-contact-form__input" type="text" name="your name" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="mobile-contact-form__group">
+                        <label for="email" class="mobile-contact-form__label">Your email</label>
+                        <input type="email" class="mobile-contact-form__input" type="text" name="your email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="mobile-contact-form__content">
+                    <label for="message" class="mobile-contact-form__label">Your message</label>
+                    <textarea name="your message" id="message" cols="30" rows="10" class="mobile-contact-form__textarea" placeholder="Write your message"></textarea>
+                </div>
+            </form>
+        </div>
     </section>
 <?php
     include "includes/footer.php";
