@@ -14,7 +14,6 @@
                             <p class="testimonial__text">
                                 Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
                             </p>
-
                             <p class="testimonial__info">
                                 <span class="testimonial__name">
                                     Kerry Johnes 
@@ -36,7 +35,6 @@
                             <p class="testimonial__text">
                                 Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
                             </p>
-
                             <p class="testimonial__info">
                                 <span class="testimonial__name">
                                     Kerry Johnes 
@@ -58,7 +56,6 @@
                             <p class="testimonial__text">
                                 Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
                             </p>
-
                             <p class="testimonial__info">
                                 <span class="testimonial__name">
                                     Kerry Johnes 
@@ -80,7 +77,6 @@
                             <p class="testimonial__text">
                                 Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
                             </p>
-
                             <p class="testimonial__info">
                                 <span class="testimonial__name">
                                     Kerry Johnes 
@@ -102,7 +98,6 @@
                             <p class="testimonial__text">
                                 Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
                             </p>
-
                             <p class="testimonial__info">
                                 <span class="testimonial__name">
                                     Kerry Johnes 

@@ -13,6 +13,9 @@
   border-radius: 36px;
   position: relative;
   z-index: 2;
+  border: none;
+  outline: none;
+  cursor: pointer;
   &--pink {
     margin-top: var(--span-2xl);
     background: var(--pink);

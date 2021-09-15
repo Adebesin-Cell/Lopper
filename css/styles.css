@@ -112,6 +112,9 @@ body {
   border-radius: 36px;
   position: relative;
   z-index: 2;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn--pink {
@@ -2077,6 +2080,7 @@ body {
 .mobile-clients__image {
   display: block;
   width: 100%;
+  height: 35px;
 }
 
 .mobile-clients__card {
@@ -2292,7 +2296,7 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .section-contact-form {
-    height: 475px;
+    height: 520px;
     margin-top: calc(0 * var(--span-2xl));
   }
 }
@@ -2393,6 +2397,15 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--dark-grey);
+}
+
+.contact-form__btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form__btn {
+  height: 55px;
 }
 
 .section-gallery-intro {

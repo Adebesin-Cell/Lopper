@@ -186,7 +186,7 @@
     margin-top: calc(-2 * var(--span-2xl));
   }
   @media only screen and (max-width: 1024px) {
-    height: 475px;
+    height: 520px;
     margin-top: calc(0 * var(--span-2xl));
   }
 }
@@ -282,5 +282,14 @@
     letter-spacing: 0em;
     text-align: left;
     color: var(--dark-grey);
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    height: 55px;
   }
 }

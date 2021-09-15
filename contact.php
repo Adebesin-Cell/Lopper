@@ -83,7 +83,7 @@
         </div>
     </section>
     <section class="section-contact-form">
-        <form action="#" class="contact-form">
+        <form action="#" class="contact-form" method="POST">
             <h1 class="contact-form__header">
                 Get in touch with us
             </h1>
@@ -100,8 +100,11 @@
                 </div>
                 <div class="contact-form__content">
                     <label for="message" class="contact-form__label">Your message</label>
-                    <textarea name="Write your message" id="message" cols="30" rows="10" placeholder="Write your message" class="contact-form__textarea"></textarea>
+                    <textarea name="your message" id="message" cols="30" rows="10" placeholder="Write your message" class="contact-form__textarea"></textarea>
                 </div>
+            </div>
+            <div class="contact-form__btn-box">
+                <button type="submit" class="contact-form__btn btn btn--pink">Send message</button>
             </div>
         </form>
     </section>
