@@ -48,6 +48,7 @@
             </div>
         </div>
     </section>
+    <!-- desktop  and mobile-->
     <section class="section-intro" id="section-intro">
         <div class="our-intro">
             <div class="our-intro__text">
@@ -90,6 +91,34 @@
             </div>
         </div>
     </section>
+    <!-- tablet -->
+    <section class="section-tablet-intro" id="section-tablet-intro">
+        <div class="container">
+            <div class="tablet-intro">
+                <div class="tablet-intro__content">
+                    <h3 class="tablet-intro__header">
+                        Intro
+                    </h3>
+                    <h1 class="tablet-intro__banner">
+                        Our future
+                    </h1>
+                    <h4 class="tablet-intro__sub-header">
+                        Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                    </h4>
+                    <p class="tablet-intro__paragraph">
+                        By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
+                    </p>
+                    <a href="services.php" class="btn btn--pink sm-u-mt">
+                        Learn more
+                    </a>
+                </div>
+                <div class="tablet-intro__image-box">
+                    <img src="assets/images/lady.png" alt="intro" class="tablet-intro__image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- desktop -->
     <section class="section-features">
         <div class="features">
             <div class="features__text">
@@ -186,6 +215,19 @@
                             <path d="M8.79105 4.85355C8.98632 4.65829 8.98632 4.34171 8.79105 4.14645L5.60907 0.964466C5.41381 0.769204 5.09723 0.769204 4.90197 0.964466C4.7067 1.15973 4.7067 1.47631 4.90197 1.67157L7.73039 4.5L4.90197 7.32843C4.7067 7.52369 4.7067 7.84027 4.90197 8.03553C5.09723 8.2308 5.41381 8.2308 5.60907 8.03553L8.79105 4.85355ZM0.5625 5H8.4375V4H0.5625V5Z" fill="#F4F4ED"/>
                         </svg>
                     </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tablet and mobile -->
+    <section class="section-features-tablet">
+        <div class="container">
+            <div class="features-tablet">
+                <div class="features-tablet__content">
+                    &nbsp;
+                </div>
+                <div class="features-tablet__slider">
+                    &nbsp;
                 </div>
             </div>
         </div>

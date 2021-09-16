@@ -1,6 +1,7 @@
 //scroll elements selection
 const btnScroll = document.querySelector(".scroll__btn");
 const section = document.querySelector("#section-intro");
+const section2 = document.querySelector("#section-tablet-intro");
 //sclider elements selection
 const sliders = document.querySelectorAll(".slider");
 const prevBtn = document.querySelector(".prev");
@@ -12,10 +13,17 @@ const totalSlidesEl = document.querySelector(".slider__total");
 btnScroll.addEventListener("click", function (e) {
   e.preventDefault();
   const s1coords = section.getBoundingClientRect();
+  const s2coords = section2.getBoundingClientRect();
 
   window.scrollTo({
     top: s1coords.top + window.pageYOffset,
     left: s1coords.left + window.pageXOffset,
+    behavior: "smooth",
+  });
+
+  window.scrollTo({
+    top: s2coords.top + window.pageYOffset,
+    left: s2coords.left + window.pageXOffset,
     behavior: "smooth",
   });
 });

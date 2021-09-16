@@ -9,6 +9,9 @@
 }
 
 .sm-u-mt {
+  @media only screen and (max-width: 768px) {
+    margin-top: var(--span-l) !important;
+  }
   @media only screen and (max-width: 600px) {
     margin-top: var(--span-xl) !important;
   }
