@@ -52,8 +52,6 @@ html {
 
 body {
   font-family: "M PLUS 1p", sans-serif;
-  max-width: 1680px;
-  margin: 0 auto;
 }
 
 ::selection {
@@ -1076,21 +1074,21 @@ body {
 
 @media only screen and (max-width: 1440px) {
   .testimonial__image {
-    width: 300px;
+    width: 300px !important;
     height: 300px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .testimonial__image {
-    width: 200px;
+    width: 200px !important;
     height: 200px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .testimonial__image {
-    width: 100px;
+    width: 100px !important;
     height: 100px;
   }
 }
@@ -2796,6 +2794,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-home-intro .header__navigation {
+    height: 100px;
+  }
+}
+
 .intro {
   padding-top: var(--span-l);
   padding-bottom: calc(2 * var(--span-2xl));
@@ -4023,6 +4027,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 130px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .our-team__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media only screen and (max-width: 768px) {
