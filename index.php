@@ -155,7 +155,7 @@
             <div class="features__slider">
                 <div class="slider">
                     <div class="slider__image-box">
-                        <img src="assets/images/slider-1.png" alt="Mobile Apps" class="slider__image">
+                        <img src="assets/images/slider-1.jpg" alt="Mobile Apps" class="slider__image">
                     </div>
                     <div class="slider__caption">
                         <p class="slider__text">
@@ -175,7 +175,7 @@
                 </div>
                 <div class="slider">
                     <div class="slider__image-box">
-                        <img src="assets/images/slider-3.png" alt="Custom Software" class="slider__image">
+                        <img src="assets/images/slider-3.jpg" alt="Custom Software" class="slider__image">
                     </div>
                     <div class="slider__caption">
                         <p class="slider__text">
@@ -224,10 +224,39 @@
         <div class="container">
             <div class="features-tablet">
                 <div class="features-tablet__content">
-                    &nbsp;
+                    <h3 class="features-tablet__header">
+                        Benefits
+                    </h3>
+                    <h1 class="features-tablet__banner">
+                        Shaping the future
+                    </h1>
+                    <h4 class="features-tablet__sub-header">
+                        Eget nunc scelerisque viverra mauris in aliquam. Dignissim sodales ut eu sem integer vitae. Libero nunc consequat interdum varius.
+                    </h4>
+                    <p class="features-tablet__paragraph">
+                        <span>
+                            Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.
+                        </span>
+                        <span>
+                            Lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+                        </span>
+
+                        <span>
+                            Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus in ornare quam viverra.
+                        </span>
+
+                        <span>
+                            Posuere ac ut consequat semper viverra.
+                        </span>
+                    </p>
+                    <a href="services.php" class="btn btn--pink sm-u-mt">
+                        Learn more
+                    </a>
                 </div>
-                <div class="features-tablet__slider">
-                    &nbsp;
+                <div class="features-tablet__slides">
+                    <div class="features-tablet__image-box">
+                        <img src="assets/images/slider-1.jpg" alt="slider" class="features-tablet__image">
+                    </div>
                 </div>
             </div>
         </div>

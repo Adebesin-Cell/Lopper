@@ -69,3 +69,21 @@ const nextSlide = function () {
 
 prevBtn.addEventListener("click", prevSlide);
 nextBtn.addEventListener("click", nextSlide);
+
+const image = document.querySelector(".features-tablet__image");
+console.log(image);
+let counter = 0;
+
+const interval = 10000;
+
+const changeImage = function () {
+  if (counter === 4) {
+    counter = 1;
+  } else {
+    counter++;
+  }
+
+  image.src = `assets/images/slider-${counter}.jpg`;
+};
+
+setInterval(changeImage, interval);
