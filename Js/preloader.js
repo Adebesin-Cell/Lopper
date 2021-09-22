@@ -22,4 +22,4 @@ const load = function () {
   }
 };
 
-let loading = setInterval(load, 50);
+let loading = setInterval(load, 10);
