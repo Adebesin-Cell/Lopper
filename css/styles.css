@@ -1067,7 +1067,7 @@ body {
 
 .testimonial__image {
   display: block;
-  width: 460px;
+  width: 460px !important;
   height: 460px;
   border-radius: 50%;
 }
