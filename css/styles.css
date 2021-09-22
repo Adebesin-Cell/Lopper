@@ -52,6 +52,8 @@ html {
 
 body {
   font-family: "M PLUS 1p", sans-serif;
+  max-width: 1680px;
+  margin: 0 auto;
 }
 
 ::selection {
