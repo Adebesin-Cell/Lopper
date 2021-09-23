@@ -1045,6 +1045,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1800px) {
+  .section-testimonial {
+    background: var(--light);
+  }
+}
+
 .testimonial {
   position: relative;
   z-index: 2;

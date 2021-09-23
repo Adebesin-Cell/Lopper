@@ -71,9 +71,7 @@ prevBtn.addEventListener("click", prevSlide);
 nextBtn.addEventListener("click", nextSlide);
 
 const image = document.querySelector(".features-tablet__image");
-console.log(image);
 let counter = 0;
-
 const interval = 10000;
 
 const changeImage = function () {
