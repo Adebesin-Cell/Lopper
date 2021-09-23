@@ -378,12 +378,8 @@
   grid-template-rows: repeat(5, 200px);
   grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
 
-  @media only screen and (min-width: 1960px) {
-    grid-template-columns: 1fr 5px 200px repeat(2, 175px) 50px 200px;
-  }
-
-  @media only screen and (min-width: 2560px) {
-    grid-template-columns: 1fr 240px 200px 225px 175px 30px 200px;
+  @media only screen and (min-width: 1800px) {
+    grid-template-columns: 1fr 100px repeat(2, 175px) 200px;
   }
 
   @media only screen and (max-width: 1799px) {

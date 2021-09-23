@@ -54,6 +54,14 @@ body {
   font-family: "M PLUS 1p", sans-serif;
 }
 
+@media only screen and (min-width: 1800px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: var(--white);
+  }
+}
+
 ::selection {
   background: var(--pink);
   color: var(--white);
@@ -3265,15 +3273,9 @@ body {
   grid-template-columns: 1fr 200px repeat(2, 175px) 200px;
 }
 
-@media only screen and (min-width: 1960px) {
+@media only screen and (min-width: 1800px) {
   .features {
-    grid-template-columns: 1fr 5px 200px repeat(2, 175px) 50px 200px;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  .features {
-    grid-template-columns: 1fr 240px 200px 225px 175px 30px 200px;
+    grid-template-columns: 1fr 100px repeat(2, 175px) 200px;
   }
 }
 
