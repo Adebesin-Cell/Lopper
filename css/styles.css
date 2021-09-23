@@ -4037,12 +4037,6 @@ body {
   grid-gap: 130px;
 }
 
-@media only screen and (min-width: 1800px) {
-  .our-team__wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .our-team__wrapper {
     grid-template-columns: repeat(2, 1fr);
