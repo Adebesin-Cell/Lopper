@@ -1081,8 +1081,8 @@ body {
 
 .testimonial__image {
   display: block;
-  width: 460px !important;
-  height: 460px;
+  width: 300px !important;
+  height: 300px;
   border-radius: 50%;
 }
 
@@ -1110,14 +1110,14 @@ body {
 .testimonial__text {
   margin-top: var(--span-xl);
   font-family: var(--family-2);
-  font-size: calc(var(--size-xl) + 4px);
+  font-size: calc(var(--size-l));
   font-style: italic;
   font-weight: var(--weight-sm);
-  line-height: 64px;
+  line-height: 40px;
   letter-spacing: 0em;
   text-align: center;
   color: var(--header);
-  max-width: 760px;
+  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
 }
