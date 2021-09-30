@@ -797,10 +797,19 @@ body {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
   .header__navigation {
-    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
     height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__navigation {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px;
   }
 }
 
@@ -2806,6 +2815,12 @@ body {
   background-position: center;
   color: var(--white);
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1300px) {
+  .section-home-intro .header__navigation {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

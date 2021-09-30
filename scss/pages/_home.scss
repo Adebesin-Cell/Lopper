@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
 
   .header__navigation {
+    @media only screen and (max-width: 1300px) {
+      height: 150px;
+    }
+
     @media only screen and (max-width: 600px) {
       height: 100px;
     }
